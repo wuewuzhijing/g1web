@@ -5,8 +5,7 @@ html {
     -ms-text-size-adjust: 100%;
 }
 /* 去除iPhone中默认的input样式 */
-input[type="submit"],input[type="reset"],input[type="button"],input{-webkit-appearance:none; resize: none;font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
-}
+input[type="submit"],input[type="reset"],input[type="button"],input{-webkit-appearance:none; resize: none;}
 /* 取消链接高亮  */
 body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
 aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);margin:0; padding:0; border:none; }
@@ -24,39 +23,48 @@ width:auto\9; /* ie8 */
 width:100%;
 }
 /* 初始化 */
-body{
-    font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
 }
 em,i{font-style:normal;}
 strong,b{font-weight: normal;}
+
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 ul,ol{list-style:none;}
-h1, h2, h3, h4, h5, h6{ font-size:100%;}
+h1, h2, h3, h4, h5, h6{ font-size:100%;font-weight: normal;}
 button{outline: none;}
-
-
-.fl{float: left;}
-.fr{float: right;}
-.auto{margin:0 auto;}
-.hide{display:none;}
-.tx_center{text-align: center;}
-
-/*float高度塌陷清除*/
-.clearfix:after {
-    display: block;
-    height: 0;
-    content: '';
-    clear: both;
-}
-
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
 /*marginTop生效*/
 .befo:before, .afte:after {
     content: '';
     display: table;
 }
-
+.fl{float: left;}
+.fr{float: right;}
+.auto{margin:0 auto;}
+.hide{display:none;}
+.tx_center{text-align: center;}
+.big_border_radius{
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
 html{font-size:-webkit-calc(100vw/7.5);font-size:calc(100vw/7.5);}
-.wrap{max-width: 750px;margin:0 auto;}
-body{  background: #f6f6f6; }
-
+.wrap{max-width: 7.5rem;margin:0 auto;background: #ffffff;}
+body{
+    background: #f6f6f6;
+    color: #333333;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #999999;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #999999;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #999999;
+}

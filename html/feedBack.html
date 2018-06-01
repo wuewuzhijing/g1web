@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/feedback.css"/>
+    <title>意见反馈</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="titleLine classFy">
+        <h4>分类标签</h4>
+        <div class="classFyList clearfix">
+            <span >功能建议</span>
+            <span>使用求助</span>
+            <span>支持鼓励</span>
+        </div>
+    </div>
+    <div class="titleLine feedbackCnt">
+        <h4>反馈内容</h4>
+        <div class="cnt">
+            <textarea cols="40" rows="5" id="note"
+                      name="note" maxlength="100" value=""
+                      onkeyup="this.value=this.value.substring(0, 200)"
+                      placeholder="最多可输入200字"></textarea>
+            <div class="rightBot"><span id="text-count" value="">0</span>/200</div>
+
+        </div>
+        <div class="picArea clearfix">
+            <div class="picItem picItemOne">
+                <div class="showPic">
+                    <img src="" alt="" class="camera">
+                </div>
+                <div class="deletePic">
+                    <img src="../img/close.png" alt="" class="delete">
+                </div>
+            </div>
+            <!--<div class="picItem">-->
+                <!--<div class="showPic">-->
+                    <!--<img src="../img/avarta.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="deletePic">-->
+                    <!--<img src="../img/close.png" alt="" class="delete">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="picItem">-->
+                <!--<div class="showPic">-->
+                    <!--<img src="../img/avarta.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="deletePic">-->
+                    <!--<img src="../img/close.png" alt="" class="delete">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="picItem">-->
+                <!--<div class="showPic">-->
+                    <!--<img src="../img/avarta.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="deletePic">-->
+                    <!--<img src="../img/close.png" alt="" class="delete">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="picItem addPic">
+                <img src="../img/picUpload.png" alt="150x150">
+            </div>
+        </div>
+    </div>
+    <div class="titleLine contact">
+        <h4>联系方式</h4>
+        <div class="contactWay ">
+            <input type="text" id="call_num" placeholder="请输入手机号"/>
+        </div>
+    </div>
+</div>
+<div class="fixedSubmit">提交</div>
+
+<div class="mask"></div>
+<div class="fixedUploadWrap">
+    <div class="fixedUpload">
+        <span class="takePhoto">拍照</span>
+        <span class="fromAlbum">从相册选择</span>
+        <span class="cancle" >取消</span>
+    </div>
+</div>
+
+
+<script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/feedback.js" type="text/javascript"></script>
+</body>
+
+</html>
