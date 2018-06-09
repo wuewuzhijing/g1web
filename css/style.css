@@ -64,6 +64,10 @@
     padding: 0.3rem 0.76rem;
 }
 
+.content_two{
+    padding: 0 0.76rem;
+}
+
 .content .content_txt{
     font-size: .32rem;
     line-height: 1.5;
@@ -81,7 +85,40 @@
     color: #444444;
 }
 
+.content .btn_normal_two{
+    margin-top:0;
+}
+
 .content img{
     display: none;
     margin: 0.2rem auto;
 }
+
+.body_voice_describe{
+    background: #ffffff;
+}
+
+.header_voice{
+    width: 3.2rem;
+    height: 5rem;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    left: 0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+.img_voice{
+    width: 3.2rem;
+    height: 4rem;
+}
+
+.name_voice{
+    width: 3.2rem;
+    font-size: 0.36rem;
+    text-align: center;
+    color: #444444;
+}
+
