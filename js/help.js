@@ -10,8 +10,8 @@ $(function () {
     var img_subhead = "";
     var txt_subhead = "";
 
-    // var item = GetQueryString("item");
-    var item = 1;
+
+    var item = GetQueryString("item");
     if(item == null || item == undefined){
         alert("item参数异常");
         return;
