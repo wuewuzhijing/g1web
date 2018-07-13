@@ -14,7 +14,7 @@ $(function () {
 
     var source = GetQueryString("source");
 
-     //美广 migood 中性版 neutral   艾韵 aiyun
+     //美广 migood 中性版 neutral   艾韵 aiwin
     if(source == "migood"){
         a1_name = "智能遥控器";
         app_name = "美广";
